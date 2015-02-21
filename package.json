@@ -14,5 +14,13 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-fest": "^0.1.5",
     "grunt-shell": "^1.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BorisKolganov/tp_front_2015_02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BorisKolganov/tp_front_2015_02/issues"
+  },
+  "homepage": "https://github.com/BorisKolganov/tp_front_2015_02"
 }
