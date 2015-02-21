@@ -1,7 +1,6 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
     <div>
-        <h3>game</h3>
+        <h1>Filler_game</h1>
     </div>
-    <a href="#" class="back">back</a>
 </fest:template>

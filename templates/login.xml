@@ -1,7 +1,14 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
+    <fest:include src='addons/header.xml'/>
     <div>
-        <h1>Login</h1>
+        <h3>Login</h3>
     </div>
+    <form name="login" method="post" action="input1.php">
+ 		<input type="email" placeholder="E-mail"/> <br />
+ 		<input type="password" placeholder="your pass"/> <br />
+ 		<input type="submit" value="send"/>
+ 	</form>
+    
     <a href="#" class="back">back</a> 
 </fest:template>

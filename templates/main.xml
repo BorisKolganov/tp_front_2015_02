@@ -1,10 +1,8 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
-    <div>
-        <h1>Filler_game</h1>
-    </div>
+    <fest:include src='addons/header.xml'/>
     <div> 
-    	<h2>Main menu</h2>
+    	<h3>Main menu</h3>
     </div>
     <a href="#" class="js-scoreboard">Scoreboard</a> <fest:space/>
     <a href="#" class="js-game">Game</a> <fest:space/>

@@ -1,0 +1,606 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>Issues · BorisKolganov/tp_front_2015_02 · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="BorisKolganov/tp_front_2015_02" name="twitter:title" /><meta content="Contribute to tp_front_2015_02 development by creating an account on GitHub." name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/5911030?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/5911030?v=3&amp;s=400" property="og:image" /><meta content="BorisKolganov/tp_front_2015_02" property="og:title" /><meta content="https://github.com/BorisKolganov/tp_front_2015_02" property="og:url" /><meta content="Contribute to tp_front_2015_02 development by creating an account on GitHub." property="og:description" />
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C31320CC:0FF5:1696ACD2:54E852D4" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#index" name="analytics-event" />
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="yuXKFBBsWU8TgwpV7jJQ+blbHQLvWENac25SK6E4z4eH2eiGebK9nEYaLkGLcG1p8wco4tpKrXlJKaKQvqlrgQ==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-951e64287f8bc97e9b47e510c3be2de006cf747d5c833af0f3389ecb49313596.css" media="all" rel="stylesheet" />
+    <link href="https://assets-cdn.github.com/assets/github2-f7073494168d35df2845fccdae3f73cb69dc51cf65c42dccd9cefb67ee814256.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="f323dd8546e66c2e974b3bce9d06785e">
+
+      
+  <meta name="description" content="Contribute to tp_front_2015_02 development by creating an account on GitHub.">
+  <meta name="go-import" content="github.com/BorisKolganov/tp_front_2015_02 git https://github.com/BorisKolganov/tp_front_2015_02.git">
+
+  <meta content="5911030" name="octolytics-dimension-user_id" /><meta content="BorisKolganov" name="octolytics-dimension-user_login" /><meta content="31120500" name="octolytics-dimension-repository_id" /><meta content="BorisKolganov/tp_front_2015_02" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="31120500" name="octolytics-dimension-repository_network_root_id" /><meta content="BorisKolganov/tp_front_2015_02" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/BorisKolganov/tp_front_2015_02/commits/master.atom" rel="alternate" title="Recent Commits to tp_front_2015_02:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="button primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="button" href="/login?return_to=%2FBorisKolganov%2Ftp_front_2015_02%2Fissues" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/BorisKolganov/tp_front_2015_02/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/BorisKolganov/tp_front_2015_02/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class="js-site-search-field is-clearable"
+    data-hotkey="s"
+    name="q"
+    placeholder="Search"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2FBorisKolganov%2Ftp_front_2015_02"
+    class="minibutton with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/BorisKolganov/tp_front_2015_02/watchers">
+    2
+  </a>
+
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2FBorisKolganov%2Ftp_front_2015_02"
+    class="minibutton with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/BorisKolganov/tp_front_2015_02/stargazers">
+      0
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2FBorisKolganov%2Ftp_front_2015_02"
+        class="minibutton with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/BorisKolganov/tp_front_2015_02/network" class="social-count">
+        0
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="/BorisKolganov" class="url fn" itemprop="url" rel="author"><span itemprop="title">BorisKolganov</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="/BorisKolganov/tp_front_2015_02" class="js-current-repository" data-pjax="#js-repo-pjax-container">tp_front_2015_02</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/BorisKolganov/tp_front_2015_02/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/BorisKolganov/tp_front_2015_02" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /BorisKolganov/tp_front_2015_02">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/BorisKolganov/tp_front_2015_02/issues" aria-label="Issues" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /BorisKolganov/tp_front_2015_02/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+      <a href="/BorisKolganov/tp_front_2015_02/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /BorisKolganov/tp_front_2015_02/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/BorisKolganov/tp_front_2015_02/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /BorisKolganov/tp_front_2015_02/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/BorisKolganov/tp_front_2015_02/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /BorisKolganov/tp_front_2015_02/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-32-e513294efa576953719e4e2de888dd9cf929b7d62ed8d05f25e731d02452ab6c.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+              <div class="only-with-full-nav">
+                  
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/BorisKolganov/tp_front_2015_02.git" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/BorisKolganov/tp_front_2015_02" readonly="readonly">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+<p class="clone-options">You can clone with
+  <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a> or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <span class="octicon octicon-question"></span>
+  </a>
+</p>
+
+
+
+                <a href="/BorisKolganov/tp_front_2015_02/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download the contents of BorisKolganov/tp_front_2015_02 as a zip file"
+                   title="Download the contents of BorisKolganov/tp_front_2015_02 as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/assets/spinners/octocat-spinner-128-338974454bb5c32803e82f601beb051d373744b024fe8742a76009700fd7e033.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div class="subnav" data-pjax>
+    <a href="/BorisKolganov/tp_front_2015_02/issues/new" class="button primary right" data-hotkey="c">
+      New issue
+    </a>
+
+  <div class="right" role="search">
+
+    <form method="get" action="/BorisKolganov/tp_front_2015_02/issues" class="subnav-search subnav-divider-right left" data-pjax>
+      <input type="text" name="q" value="is:issue is:open " id="js-issues-search" class="subnav-search-input input-contrast" placeholder="Search all issues" data-hotkey="/">
+      <span class="octicon octicon-search subnav-search-icon"></span>
+    </form>
+  </div>
+
+  
+<div class="subnav-links left" role="navigation">
+    <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aopen+is%3Aissue" class="selected js-selected-navigation-item subnav-item" data-selected-links="repo_issues /BorisKolganov/tp_front_2015_02/issues?q=is%3Aopen+is%3Aissue">Issues</a>
+  <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aopen+is%3Apr" class="js-selected-navigation-item subnav-item" data-selected-links="repo_pulls /BorisKolganov/tp_front_2015_02/issues?q=is%3Aopen+is%3Apr">Pull requests</a>
+  <a href="/BorisKolganov/tp_front_2015_02/labels" class="js-selected-navigation-item subnav-item" data-selected-links="repo_labels /BorisKolganov/tp_front_2015_02/labels">Labels</a>
+  <a href="/BorisKolganov/tp_front_2015_02/milestones" class="js-selected-navigation-item subnav-item" data-selected-links="repo_milestones /BorisKolganov/tp_front_2015_02/milestones">Milestones</a>
+</div>
+
+</div>
+
+
+
+    <div class="table-list-header" id="js-issues-toolbar">
+
+  <div class="table-list-filters">
+    
+<div class="table-list-header-toggle states left">
+    <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aopen+is%3Aissue" class="button-link selected">
+      <span class="octicon octicon-issue-opened"></span>
+      1 Open
+    </a>
+
+    <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aclosed" class="button-link ">
+      <span class="octicon octicon-check"></span>
+      0 Closed
+    </a>
+</div>
+
+
+    <div class="table-list-header-toggle right">
+      <div class="left select-menu js-menu-container js-select-menu js-load-contents"
+     data-contents-url="/BorisKolganov/tp_front_2015_02/issues/show_menu_content?partial=filters%2Fauthors_content&amp;q=is%3Aissue+is%3Aopen">
+  <span class="button-link select-menu-button js-menu-target" role="button" aria-haspopup="true" data-hotkey="u">
+    Author
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Filter by author</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="js-select-menu-deferred-content"></div>
+      <div class="select-menu-loading-overlay"></div>
+    </div>
+  </div>
+</div>
+
+      <div class="left select-menu label-select-menu js-menu-container js-select-menu js-load-contents"
+     data-contents-url="/BorisKolganov/tp_front_2015_02/issues/show_menu_content?partial=filters%2Flabels_content&amp;q=is%3Aissue+is%3Aopen">
+  <span class="button-link select-menu-button js-menu-target" role="button" aria-haspopup="true" data-hotkey="l">
+    Labels
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Filter by label</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="js-select-menu-deferred-content"></div>
+      <div class="select-menu-loading-overlay"></div>
+    </div>
+  </div>
+</div>
+
+      
+<div class="left select-menu js-menu-container js-select-menu js-load-contents"
+     data-contents-url="/BorisKolganov/tp_front_2015_02/issues/show_menu_content?partial=filters%2Fmilestones_content&amp;q=is%3Aissue+is%3Aopen">
+  <span class="button-link select-menu-button js-menu-target" role="button" aria-haspopup="true" data-hotkey="m">
+    Milestones
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Filter by milestone</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="js-select-menu-deferred-content"></div>
+      <div class="select-menu-loading-overlay"></div>
+    </div>
+  </div>
+</div>
+
+      <div class="left select-menu js-menu-container js-select-menu js-load-contents"
+     data-contents-url="/BorisKolganov/tp_front_2015_02/issues/show_menu_content?partial=filters%2Fassigns_content&amp;q=is%3Aissue+is%3Aopen">
+  <span class="button-link select-menu-button js-menu-target" role="button" aria-haspopup="true" data-hotkey="a">
+    Assignee
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Filter by who's assigned</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="js-select-menu-deferred-content"></div>
+      <div class="select-menu-loading-overlay"></div>
+    </div>
+  </div>
+</div>
+
+      
+<div class="left select-menu js-menu-container js-select-menu">
+  <span class="button-link select-menu-button icon-only js-menu-target" role="button" aria-haspopup="true">
+    Sort<span class="sort-label"></span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Sort by</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+
+      <div class="select-menu-list" role="menu">
+        <div>
+            <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aopen+is%3Aissue" class="select-menu-item js-navigation-item js-navigation-open selected" role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">Newest</div>
+            </a>
+            <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+sort%3Acreated-asc" class="select-menu-item js-navigation-item js-navigation-open " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">Oldest</div>
+            </a>
+            <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc" class="select-menu-item js-navigation-item js-navigation-open " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">Most commented</div>
+            </a>
+            <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-asc" class="select-menu-item js-navigation-item js-navigation-open " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">Least commented</div>
+            </a>
+            <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc" class="select-menu-item js-navigation-item js-navigation-open " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">Recently updated</div>
+            </a>
+            <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-asc" class="select-menu-item js-navigation-item js-navigation-open " role="menuitem">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <div class="select-menu-item-text">Least recently updated</div>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+
+    <ul class="table-list table-list-bordered table-list-issues js-navigation-container js-active-navigation-container">
+      
+<li id="issue_1" data-issue-id="1" class=" unread table-list-item js-navigation-item js-issue-row">
+
+
+  <div class="table-list-cell table-list-cell-type">
+    <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen" aria-label="View all issues" class="tooltipped tooltipped-n">
+      <span class="octicon octicon-issue-opened open"></span>
+</a>  </div>
+
+  <div class="table-list-cell issue-title">
+
+
+    <a href="/BorisKolganov/tp_front_2015_02/issues/1" class="issue-title-link js-navigation-open">
+      test
+    </a>
+    <div class="issue-meta">
+      <span class="issue-meta-section opened-by">
+        #1
+          opened <time datetime="2015-02-21T09:39:09Z" is="relative-time">Feb 21, 2015</time> by
+          <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+author%3ABorisKolganov" aria-label="View all issues opened by BorisKolganov" class="tooltipped tooltipped-s muted-link">BorisKolganov</a>
+      </span>
+
+
+      <span class="issue-meta-section css-truncate issue-milestone">
+      </span>
+
+      
+    </div>
+  </div>
+
+  <div class="table-list-cell table-list-cell-avatar">
+  </div>
+
+  <div class="table-list-cell issue-comments">
+    <a href="/BorisKolganov/tp_front_2015_02/issues/1" class="muted-link issue-comments-no-comment">
+      <span class="octicon octicon-comment"></span>
+      0
+    </a>
+  </div>
+</li>
+
+    </ul>
+
+
+  <div class="paginate-container">
+
+      
+  </div>
+
+  <div class="protip">
+    <span class="octicon octicon-light-bulb text-muted"></span>
+    <strong>ProTip!</strong>
+    Add <a href="/BorisKolganov/tp_front_2015_02/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee">no:assignee</a> to see everything that's not assigned.
+  </div>
+
+</div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="http://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="http://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.03583s from github-fe127-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-9643b0378c6bcb216adcdaaaa703eed77aa239aaf1c2ae44cadb2fb5099ec172.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-18e60b9aac8c7c21fb47634ab0194e9f8a433423ebafc0eea0d39363aee0b8af.js"></script>
+      
+      
+
+  </body>
+</html>
+
