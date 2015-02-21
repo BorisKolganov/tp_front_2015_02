@@ -1,0 +1,12 @@
+<fest:template xmlns:fest="http://fest.mail.ru"
+    context_name="json">
+    <div>
+        <h1>Filler_game</h1>
+    </div>
+    <div> 
+    	<h2>Main menu</h2>
+    </div>
+    <a href="#" class="js-scoreboard">Scoreboard</a> <fest:space/>
+    <a href="#" class="js-game">Game</a> <fest:space/>
+    <a href="#" class="js-login">logint</a>
+</fest:template>
