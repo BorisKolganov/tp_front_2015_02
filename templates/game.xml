@@ -3,5 +3,5 @@
     <div>
         <h3>game</h3>
     </div>
-    <a href="#" class="back">back</a>
+    <a href="#" class="back btn btn-danger">back</a>
 </fest:template>
