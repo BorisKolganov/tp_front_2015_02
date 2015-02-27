@@ -3,5 +3,28 @@
     <div>
         <h3>game</h3>
     </div>
-    <a href="#" class="back btn btn-danger">back</a>
+    <div class="score">
+        You score: <fest:value>json.score</fest:value>
+    </div>
+    <div class="gameBoard">
+        <table border="2">
+            <fest:for from="1" to="10" index="i">
+                <tr>
+                    <fest:for from="1" to="10" index="j">
+                        <td style="background-color: red;"><fest:value>j</fest:value><fest:space/><fest:value>i</fest:value></td>
+                    </fest:for>
+                </tr>
+            </fest:for>
+        </table>
+    </div>
+    <div class="control-buttons">
+        <div class="control-buttons__button_red"></div>
+        <div class="control-buttons__button_green"></div>
+        <div class="control-buttons__button_blue"></div>
+        <div class="control-buttons__button_yellow"></div>
+        <div class="control-buttons__button_pink"></div>
+    </div>
+
+    <br/>
+    <a href="#back" class="btn btn-danger">back</a>
 </fest:template>

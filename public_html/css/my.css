@@ -1,0 +1,55 @@
+.control-buttons{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.control-buttons__button_red{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+    background-color: red;
+}
+.control-buttons__button_blue{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+    background-color: #0000ff;
+}
+.control-buttons__button_green{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+    background-color: #008000;
+}
+.control-buttons__button_yellow{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+    background-color: #ffff00;
+}
+.control-buttons__button_pink{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+    background-color: pink;
+}

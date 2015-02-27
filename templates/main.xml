@@ -5,7 +5,7 @@
         <h3>Main menu</h3>
     </div>
  
-    <a href="#" class="js-scoreboard btn btn-info">Scoreboard</a> <br/><br/>
-    <a href="#" class="js-game btn btn-success">Game</a> <br/><br/>
-    <a href="#" class="js-login btn btn-primary">logint</a>
+    <a href="#scoreboard" class="btn btn-info">Scoreboard</a> <br/><br/>
+    <a href="#game" class="btn btn-success">Game</a> <br/><br/>
+    <a href="#login" class="btn btn-primary">login</a>
 </fest:template>

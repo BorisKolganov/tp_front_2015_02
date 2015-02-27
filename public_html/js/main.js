@@ -1,24 +1,28 @@
-var MyMain = function () {
-    $(".page").html(mainTmpl())
+require.config({
+    urlArgs: "_=" + (new Date()).getTime(),
+    baseUrl: "js",
+    paths: {
+        jquery: "lib/jquery",
+        underscore: "lib/underscore",
+        backbone: "lib/backbone"
+    },
+    shim: {
+        'backbone': {
+            deps: ['underscore', 'jquery'],
+            exports: 'Backbone'
+        },
+        'underscore': {
+            exports: '_'
+        }
+    }
+});
 
-    $('.js-scoreboard').on("click", function () {  
-        $('.page').html(scoreboardTmpl());
-        $('.back').on("click", function () {
-           MyMain(); 
-        });
-    });
-
-    $('.js-game').on("click", function () {
-        $('.page').html(gameTmpl());
-        $('.back').on("click", function () {
-           MyMain(); 
-        });
-    });
-
-    $('.js-login').on("click", function () {
-        $('.page').html(loginTmpl());
-        $('.back').on("click", function () {
-           MyMain(); 
-        });
-    });
-}
+define([
+    'backbone',
+    'router'
+], function(
+    Backbone,
+    router
+){
+    Backbone.history.start();
+});

@@ -4,5 +4,16 @@
     <div>
         <h3>Score Board</h3>
     </div>
+
+    <table class="table">
+        <tr><th>name</th> <th>score</th></tr>
+        <fest:each iterate="json" index="i">
+            <tr>
+
+                <td><fest:value>i</fest:value></td>
+                <td><fest:value>json[i]</fest:value></td>
+            </tr>
+        </fest:each>
+    </table>
     <a href="#" class="back btn btn-danger">back</a>
 </fest:template>
