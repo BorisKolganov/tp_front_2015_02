@@ -2,9 +2,10 @@
     context_name="json">
     <fest:include src='addons/header.xml'/>
     <div> 
-    	<h3>Main menu</h3>
+        <h3>Main menu</h3>
     </div>
-    <a href="#" class="js-scoreboard">Scoreboard</a> <fest:space/>
-    <a href="#" class="js-game">Game</a> <fest:space/>
-    <a href="#" class="js-login">logint</a>
+ 
+    <a href="#" class="js-scoreboard btn btn-info">Scoreboard</a> <br/><br/>
+    <a href="#" class="js-game btn btn-success">Game</a> <br/><br/>
+    <a href="#" class="js-login btn btn-primary">logint</a>
 </fest:template>
