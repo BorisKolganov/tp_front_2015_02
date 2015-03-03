@@ -7,7 +7,7 @@
     <form name="login" method="post" action="input1.php" class="form-horizontal">
     	<fieldset>
     		<div class="form-group">
-   					<input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
+   					<input type="email" class="form-control" id="inputEmail" placeholder="Email" required="true"/>
     		</div>
     		<div class="form-group">
  				<input type="password" placeholder="your pass" class="form-control"/> <br />
@@ -17,5 +17,6 @@
  			</div>
  		</fieldset>
  	</form>
+	<a href="#registration" class="btn btn-info">registration</a>
     <a href="#" class="back btn btn-danger">back</a> 
 </fest:template>

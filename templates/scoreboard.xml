@@ -7,13 +7,13 @@
 
     <table class="table">
         <tr><th>name</th> <th>score</th></tr>
-        <fest:each iterate="json" index="i">
+            <fest:for iterate="json" index="i">
             <tr>
-
-                <td><fest:value>i</fest:value></td>
-                <td><fest:value>json[i]</fest:value></td>
+                <td><fest:value>json[i]["Name"]</fest:value></td>
+                <td><fest:value>json[i]["score"]</fest:value></td>
             </tr>
-        </fest:each>
+            </fest:for>
+
     </table>
     <a href="#" class="back btn btn-danger">back</a>
 </fest:template>

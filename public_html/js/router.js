@@ -3,18 +3,22 @@ define([
     'views/main',
     'views/scoreboard',
     'views/login',
-    'views/game'
+    'views/game',
+    'views/registration'
 ], function(
     Backbone,
     mainView,
     scoreView,
     loginView,
-    gameView
+    gameView,
+    registrationView
 ){
     $(".page").append(mainView.el);
     $(".page").append(scoreView.el);
     $(".page").append(loginView.el);
     $(".page").append(gameView.el);
+    $(".page").append(registrationView.el);
+
 
     function hideAll() {
         $("div.page > div").hide();
@@ -26,6 +30,7 @@ define([
             'game': 'gameAction',
             'login': 'loginAction',
             'back': 'defaultActions',
+            'registration': 'registrationAction',
             '*default': 'defaultActions'
         },
 
@@ -45,6 +50,10 @@ define([
         loginAction: function () {
             hideAll();
             loginView.show();
+        },
+        registrationAction: function () {
+            hideAll();
+            registrationView.show();
         }
 
     });

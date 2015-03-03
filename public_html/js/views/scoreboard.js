@@ -1,30 +1,34 @@
 define([
     'backbone',
-    'tmpl/scoreboard'
+    'tmpl/scoreboard',
+    'collections/scores'
 ], function(
     Backbone,
-    tmpl
+    tmpl,
+    scores
 ){
-    var top = {
-        'name0': 10,
-        'name1': 1,
-        'name2': 2,
-        'name3': 3,
-        'name4': 4,
-        'name5': 5,
-        'name6': 6,
-        'name7': 7,
-        'name8': 8,
-        'name9': 9
-    };
+
+
+    scores.add([
+        {Name: "Name1", score: 25},
+        {Name: "Name2", score: 26},
+        {Name: "Name3", score: 27},
+        {Name: "Name4", score: 28},
+        {Name: "Name5", score: 29},
+        {Name: "Name6", score: 50},
+        {Name: "Name7", score: 31},
+        {Name: "Name8", score: 32},
+        {Name: "Name9", score: 33}]);
+
     var View = Backbone.View.extend({
 
         template: tmpl,
         initialize: function () {
-            this.$el.html( this.template(top) );
+            this.$el.html( this.template(scores.toJSON()));
         },
         render: function () {
             // TODO
+
         },
         show: function () {
             // TODO
