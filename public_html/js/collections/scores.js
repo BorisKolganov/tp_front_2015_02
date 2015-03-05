@@ -3,13 +3,13 @@ define([
     'models/score'
 ], function(
     Backbone,
-    score
+    Score
 ){
 
     var UserCollection = Backbone.Collection.extend({
-    	model: score,
+    	model: Score,
         comparator: function(score) {
-            return - score.get("score")
+            return -score.get("score")
         }
     });
 
