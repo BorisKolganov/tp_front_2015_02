@@ -26,5 +26,5 @@
     </div>
 
     <br/>
-    <a href="#back" class="btn btn-danger">back</a>
+    <a href="#" class="btn btn-danger">back</a>
 </fest:template>

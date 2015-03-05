@@ -18,5 +18,5 @@
  		</fieldset>
  	</form>
 	<a href="#registration" class="btn btn-info">registration</a>
-    <a href="#" class="back btn btn-danger">back</a> 
+    <a href="#" class="btn btn-danger">back</a> 
 </fest:template>

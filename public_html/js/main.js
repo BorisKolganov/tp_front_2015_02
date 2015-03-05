@@ -4,7 +4,8 @@ require.config({
     paths: {
         jquery: "lib/jquery",
         underscore: "lib/underscore",
-        backbone: "lib/backbone"
+        backbone: "lib/backbone",
+        bootstrap: "lib/bootstrap.min"
     },
     shim: {
         'backbone': {
@@ -13,16 +14,21 @@ require.config({
         },
         'underscore': {
             exports: '_'
+        },
+        'bootstrap': {
+            deps: ['jquery']
         }
     }
 });
 
 define([
     'backbone',
-    'router'
+    'router',
+    'bootstrap'
 ], function(
     Backbone,
-    router
+    router,
+    bootstrap
 ){
     Backbone.history.start();
 });

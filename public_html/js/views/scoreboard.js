@@ -11,7 +11,7 @@ define([
 
     scores.add([
         {Name: "Name1", score: 25},
-        {Name: "Name2", score: 26},
+        {Name: "Name2", score: 40},
         {Name: "Name3", score: 27},
         {Name: "Name4", score: 28},
         {Name: "Name5", score: 29},
