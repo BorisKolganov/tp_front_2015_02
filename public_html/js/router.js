@@ -4,27 +4,30 @@ define([
     'views/scoreboard',
     'views/login',
     'views/game',
-    'views/registration'
+    'views/registration',
+    'views/viewManager'
 ], function(
     Backbone,
     mainView,
     scoreView,
     loginView,
     gameView,
-    registrationView
+    registrationView,
+    VM
 ){
     $(".page").append(mainView.el);
     $(".page").append(scoreView.el);
     $(".page").append(loginView.el);
     $(".page").append(gameView.el);
     $(".page").append(registrationView.el);
-
-
-    function hideAll() {
-        $("div.page > div").hide();
-    }
+    VM.add(mainView);
+    VM.add(scoreView);
+    VM.add(loginView);
+    VM.add(gameView);
+    VM.add(registrationView);
 
     var Router = Backbone.Router.extend({
+        vm: VM,
         routes: {
             'scoreboard': 'scoreboardAction',
             'game': 'gameAction',
@@ -36,23 +39,18 @@ define([
 
 
         defaultActions: function () {
-            hideAll();
             mainView.show();
         },
         scoreboardAction: function () {
-            hideAll();
             scoreView.show();
         },
         gameAction: function () {
-            hideAll();
             gameView.show();
         },
         loginAction: function () {
-            hideAll();
             loginView.show();
         },
         registrationAction: function () {
-            hideAll();
             registrationView.show();
         }
 

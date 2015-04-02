@@ -4,7 +4,6 @@
     <div> 
         <h3>Main menu</h3>
     </div>
- 
     <a href="#scoreboard" class="btn btn-info">Scoreboard</a> <br/><br/>
     <a href="#game" class="btn btn-success">Game</a> <br/><br/>
     <a href="#login" class="btn btn-primary">login</a>

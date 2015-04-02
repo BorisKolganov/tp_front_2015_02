@@ -10,6 +10,7 @@ define([
     var View = Backbone.View.extend({
         template: tmpl,
         scores: Scores,
+        className: "scoreboard-view",
         initialize: function () {
             this.scores.add([
                 {Name: "Name1", score: 25},
@@ -22,17 +23,16 @@ define([
                 {Name: "Name8", score: 32},
                 {Name: "Name9", score: 33}
             ]);
-            this.$el.html( this.template(this.scores.toJSON()));
+            this.render();
+            this.hide();
         },
         render: function () {
-            // TODO
+            this.$el.html( this.template(this.scores.toJSON()));
         },
         show: function () {
-            // TODO
-            this.$el.show();
+            this.trigger('show', this);
         },
         hide: function () {
-            // TODO
             this.$el.hide();
         }
     });

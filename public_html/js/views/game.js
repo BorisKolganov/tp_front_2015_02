@@ -9,14 +9,17 @@ define([
     var View = Backbone.View.extend({
 
         template: tmpl,
+        className: "game-view",
+
         initialize: function () {
-            this.$el.html( this.template({'score': "one billion"}) );
+            this.render();
+            this.hide();
         },
         render: function () {
-
+            this.$el.html( this.template({'score': "one billion"}) );
         },
         show: function () {
-            this.$el.show();
+            this.trigger("show", this);
         },
         hide: function () {
             this.$el.hide();
