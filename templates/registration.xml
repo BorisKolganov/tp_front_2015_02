@@ -4,7 +4,7 @@
     <div>
         <h3>Registration</h3>
     </div>
-    <form name="login" method="post" action="" class="form-horizontal">
+    <form name="login" method="post" action="/api/v1/auth/signup" class="form-horizontal">
         <fieldset>
             <div class="form-group">
                 <input type="email" class="form-control" id="inputEmail" placeholder="e-mail" required="true" title="Input Email"/>
