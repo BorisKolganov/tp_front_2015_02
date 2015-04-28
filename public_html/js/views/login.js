@@ -1,31 +1,24 @@
 define([
     'backbone',
     'tmpl/login',
-    'jquery'
+    'jquery',
+    'models/user'
 ], function(
     Backbone,
     tmpl,
-    $
+    $,
+    userm
 ){
 
     var View = Backbone.View.extend({
-
+        model: userm,
         template: tmpl,
         className: "login-view",
         events: {'submit': 'submit'},
         submit: function (event) {
-            event.preventDefault()
-            var name = $(".login-form__email").val();
-            var pass = $(".login-form__password").val();
-            var res = {name: name, password: pass}
-            $.ajax({
-                    url:'api/v1/auth/signin'
-                    , type:'POST'
-                    , data: res
-                });
-                setTimeout("document.location.href='/#game'", 200);
-            
-
+            event.preventDefault();
+            var result = $(".login-form").serializeObject();
+            userm.login(result);
         },
         initialize: function () {
             this.render();
@@ -36,6 +29,7 @@ define([
         },
         show: function () {
             this.trigger('show', this);
+            this.$el.show();
         },
         hide: function () {
             this.$el.hide();

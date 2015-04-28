@@ -4,19 +4,19 @@
     <div>
         <h3>Registration</h3>
     </div>
-    <form name="login" method="post" action="/api/v1/auth/signup" class="form-horizontal">
+    <form method="post" class="form-horizontal signup-form">
         <fieldset>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="e-mail" required="true" title="Input Email"/>
+                <input type="email" class="form-control signup-form__email" name="email" placeholder="e-mail" required="true" title="Input Email"/>
             </div>
             <div class="form-group">
-                <input type="text" placeholder="Your name" class="form-control" required="true" pattern="[A-Za-z0-9_-]+" /> <br />
+                <input type="text" name="name" placeholder="Your name" class="form-control signup-form__name" required="true" pattern="[A-Za-z0-9_-]+" /> <br />
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Password" id="password" required="true" class="form-control"/> <br />
+                <input type="password" name="password" placeholder="Password" id="password" required="true" class="form-control signup-form__password"/> <br />
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Confirm Password" id="confirm_password" required="true" class="form-control"/> <br />
+                <input type="password" placeholder="Confirm Password" id="confirm_password" required="true" class="form-control signup-form__password"/> <br />
             </div>
             <div class="form-group">
                 <input type="submit" value="submit" class="btn btn-success"/>

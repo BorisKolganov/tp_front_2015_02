@@ -2,9 +2,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         shell: { 
         	server: {
-    			command: 'java -cp L1.2-1.0-jar-with-dependencies.jar main.Main 8080'
+                //command: ""
+                //command: "python test_server.py"
+    			command: 'java -jar L1.2-1.0-jar-with-dependencies.jar'
     		}
     	},
+
     	fest: {
     		templates: {
     			files: [{
@@ -23,6 +26,7 @@ module.exports = function (grunt) {
     			} 
     		}	
     	},
+
     	watch: {
     		fest: {
 	    		files: ['templates/*.xml'], 
@@ -36,8 +40,28 @@ module.exports = function (grunt) {
     			options: {
         			livereload: true 
     			}
-			} 
+			},
+            sass: {
+                files: [
+                  'public_html/css/scss/*.scss',
+                  'public_html/css/scss/**/*.scss'
+                ],
+                tasks: ['sass:dist'],
+                options: {
+                    atBegin: true,
+                    livereload: true
+                } 
+            }
 		},
+
+        sass: {
+            dist: {
+                files: {
+                    'public_html/css/my.css': 'public_html/css/scss/my.scss'
+                }
+            },
+        },
+
 		concurrent: {
 			target: ['watch', 'shell'], /* Подзадача */
 			options: {
@@ -49,5 +73,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-fest');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.registerTask('default', ['concurrent']);
 };

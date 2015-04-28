@@ -18,11 +18,11 @@
         </table>
     </div>
     <div class="control-buttons">
-        <div class="control-buttons__button control-buttons__button_red"></div>
-        <div class="control-buttons__button control-buttons__button_green"></div>
-        <div class="control-buttons__button control-buttons__button_blue"></div>
-        <div class="control-buttons__button control-buttons__button_yellow"></div>
-        <div class="control-buttons__button control-buttons__button_pink"></div>
+        <div class="control-buttons__button control-buttons__button_red">1</div>
+        <div class="control-buttons__button control-buttons__button_green">2</div>
+        <div class="control-buttons__button control-buttons__button_blue">3</div>
+        <div class="control-buttons__button control-buttons__button_yellow">4</div>
+        <div class="control-buttons__button control-buttons__button_pink">5</div>
     </div>
 
     <br/>
