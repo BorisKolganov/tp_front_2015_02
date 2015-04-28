@@ -14,7 +14,6 @@ define([
 			'create': {
 				send: function() {
 					var resp = sender.send("/signup", "post", model.toJSON());
-					//console.log(resp)
 					model.clear();
 					if (resp.status == 200) {
 						model.set({"id": resp.body.id,
@@ -44,7 +43,6 @@ define([
 	                        'email': resp.body.email || "",
 	                        'is_logined': true
 	                    });
-	                    model.unset('password');
                 	}
 				}
 			},

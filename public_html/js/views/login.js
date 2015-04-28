@@ -19,6 +19,7 @@ define([
             event.preventDefault();
             var result = $(".login-form").serializeObject();
             userm.login(result);
+            window.location.hash='profile'
         },
         initialize: function () {
             this.render();

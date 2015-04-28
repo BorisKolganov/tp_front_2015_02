@@ -8,6 +8,7 @@ define([
 
     var User = Backbone.Model.extend({
     	sync: usync, 
+   
         initialize: function () {
             this.fetch();
         }, 
