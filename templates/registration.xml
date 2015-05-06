@@ -6,17 +6,20 @@
     </div>
     <form method="post" class="form-horizontal signup-form">
         <fieldset>
+
             <div class="form-group">
-                <input type="email" class="form-control signup-form__email" name="email" placeholder="e-mail" required="true" title="Input Email"/>
+                <input type="email" class="form-control signup-form__email" name="email" placeholder="e-mail" required="true" title="input e-mail"/>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="your name" class="form-control signup-form__name" required="true" pattern="[A-Za-z0-9_-]+" /> <br />
+            </div>
+
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required="true" class="form-control signup-form__password"/> <br />
             </div>
             <div class="form-group">
-                <input type="text" name="name" placeholder="Your name" class="form-control signup-form__name" required="true" pattern="[A-Za-z0-9_-]+" /> <br />
-            </div>
-            <div class="form-group">
-                <input type="password" name="password" placeholder="Password" id="password" required="true" class="form-control signup-form__password"/> <br />
-            </div>
-            <div class="form-group">
-                <input type="password" placeholder="Confirm Password" id="confirm_password" required="true" class="form-control signup-form__password"/> <br />
+                <input type="password" placeholder="Confirm Password" required="true" class="form-control signup-form__password_confirm"/> <br />
             </div>
             <div class="form-group">
                 <input type="submit" value="submit" class="btn btn-success"/>

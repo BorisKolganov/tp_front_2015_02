@@ -6,21 +6,22 @@ define([
 ], function(
     Backbone,
     tmpl,
-    userm,
+    usermodel,
     $
 ){
 
     var View = Backbone.View.extend({
-        model: userm,
+        model: usermodel,
         template: tmpl,
         className: "registration-view",
         events: {
-            "change #password": "validatePassword",
-            "keyup #confirm_password": "validatePassword",
+            "change .signup-form__password": "validatePassword",
+            "keyup .signup-form__password_confirm": "validatePassword",
             "submit": "submit",
             "change": "localstorage"
         },
         initialize: function () {
+            
             this.render();
 
             this.hide();
@@ -39,8 +40,8 @@ define([
             this.$el.hide();
         },
         validatePassword: function () {
-            var password = document.getElementById("password")
-                , confirm_password = document.getElementById("confirm_password");
+            var password = (".signup-form__password")
+                , confirm_password = $(".signup-form__password_confirm");
             if ( password.value != confirm_password.value ) {
                 confirm_password.setCustomValidity("Passwords Don't Match");
             } else {

@@ -1,10 +1,7 @@
 define([
     'jquery',
 	'backbone',
-    'sender'
-], function($, Backbone, Sender) {
-	var sender = new Sender('api/v1/auth')
-
+], function($, Backbone) {
 	return function(method, model, options) {
 		if (model.has('logining')) {
 			method = "update"
@@ -13,45 +10,73 @@ define([
 		var method_map = {
 			'create': {
 				send: function() {
-					var resp = sender.send("/signup", "post", model.toJSON());
-					model.clear();
-					if (resp.status == 200) {
-						model.set({"id": resp.body.id,
-								   "name": resp.body.name,
-								   "email": resp.body.email,
-									"is_logined": true});
-					} else {
-						console.log(resp.status)
-						console.log(resp.error)
-					}
+					$.ajax({
+						context: this,
+						type: "POST",
+		                contentType: "application/json; charset=utf-8",
+		                url: "api/v1/auth/signup",
+		                data: JSON.stringify(model.toJSON()),
+		                dataType: 'json'
+					}).done(function (data){
+						if (data.status == 200) {
+							model.clear();
+							model.set(data.body)
+							model.trigger("user:load")
+						} else {
+							model.clear();
+							model.trigger("user:error:create", data)
+						}
+					})
 				}
 			},
 			'read': {
 				send: function() {
-					console.log(model.toJSON())
+					$.ajax({
+						type: "GET",
+						url: "api/v1/auth/check",
+						dataType: "json"
+					}).done(function (data){
+						if (data.status == 200) {
+							model.clear();
+							model.set(data.body);
+							model.trigger("user:load")
+						} else {
+							model.clear()
+						}
+					})
 				}
 
 			},
 			'update': {
 				send: function () {
-					var resp;
-					resp = sender.send("/signin", "post", model.toJSON())
-					if (resp.status == 200) {
-						model.clear()
-						model.set({"id": resp.body.id,
-	                        'name': resp.body.name,
-	                        'email': resp.body.email || "",
-	                        'is_logined': true
-	                    });
-                	}
+					$.ajax({
+						context: this,
+						type: "POST",
+						contentType: "application/json; charset=utf-8",
+						url: "api/v1/auth/signin",
+						data: JSON.stringify(model.toJSON()),
+						dataType: "json"
+					}).done(function (data) {
+						if (data.status == 200) {
+							model.clear();
+							model.set(data.body);
+							model.trigger("user:load")
+						} else {
+							model.clear();
+							model.trigger("user:error:login", data);
+						}
+					});
 				}
 			},
 			'delete': {
 				send: function () {
-					var sender = new Sender('')
-					var resp;
-					model.clear();
-					resp = sender.send("/logout", "post", model.toJSON())
+					$.ajax({
+						type: "POST",
+						url: "/logout"
+					}).done(function(data){
+						model.clear();
+						model.trigger("user:logout");
+					})
 				}
 			}
 		}

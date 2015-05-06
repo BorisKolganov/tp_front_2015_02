@@ -15,12 +15,12 @@ define([
     gameView,
     registrationView,
     profile,
-    VM
+    viewManager
 ){
     var Router = Backbone.Router.extend({
-        vm: VM,
+        vm: viewManager,
         initialize: function() {
-            this.vm = VM;
+            this.vm = viewManager;
             this.vm.add({
                 "mainView": mainView,
                 "scoreView": scoreView,
@@ -39,8 +39,6 @@ define([
             'profile': 'profileAction',
             '*default': 'defaultActions'
         },
-
-
         defaultActions: function () {
             mainView.show();
         },

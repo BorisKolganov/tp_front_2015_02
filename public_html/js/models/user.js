@@ -1,6 +1,6 @@
 define([
     'backbone',
-    'user_sync'
+    'syncs/user_sync'
 ], function(
     Backbone,
     usync
@@ -8,7 +8,6 @@ define([
 
     var User = Backbone.Model.extend({
     	sync: usync, 
-   
         initialize: function () {
             this.fetch();
         }, 
@@ -23,6 +22,7 @@ define([
             this.save();
         },
         logout: function () {
+            console.log("destroy")
             this.destroy();
         }
     });

@@ -7,19 +7,18 @@ define([
     Backbone,
     tmpl,
     $,
-    userm
+    usermodel
 ){
 
     var View = Backbone.View.extend({
-        model: userm,
+        model: usermodel,
         template: tmpl,
         className: "login-view",
         events: {'submit': 'submit'},
         submit: function (event) {
             event.preventDefault();
             var result = $(".login-form").serializeObject();
-            userm.login(result);
-            window.location.hash='profile'
+            this.model.login(result);
         },
         initialize: function () {
             this.render();
@@ -29,6 +28,7 @@ define([
             this.$el.html( this.template() );
         },
         show: function () {
+            console.log(this.model.toJSON())
             this.trigger('show', this);
             this.$el.show();
         },
