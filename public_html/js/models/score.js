@@ -5,9 +5,10 @@ define([
 ){
 
     var Score = Backbone.Model.extend({
-    	defaults: {
-    		"Name": "",
-    		"Score": 0
+    	initialize: function () {
+    		this.name = "";
+    		this.id = "";
+    		this.score = "";
     	}
     });
 

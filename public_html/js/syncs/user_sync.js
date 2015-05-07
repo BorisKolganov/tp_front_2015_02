@@ -19,9 +19,8 @@ define([
 		                dataType: 'json'
 					}).done(function (data){
 						if (data.status == 200) {
-							model.clear();
-							model.set(data.body)
-							model.trigger("user:load")
+							model.login(data);
+							model.trigger("user:load");
 						} else {
 							model.clear();
 							model.trigger("user:error:create", data)

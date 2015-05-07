@@ -12,7 +12,7 @@ define([
             this.fetch();
         }, 
     	signup: function(data) {
-            this.logout()
+            this.logout();
     		this.set(data);
     		this.save();
     	}, 

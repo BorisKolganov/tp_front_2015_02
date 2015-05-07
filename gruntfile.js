@@ -4,7 +4,7 @@ module.exports = function (grunt) {
         	server: {
                 //command: ""
                 //command: "python test_server.py"
-    			command: 'java -jar L1.2-1.0-jar-with-dependencies.jar'
+    			command: 'java -jar Filler-1.0-jar-with-dependencies.jar'
     		}
     	},
 

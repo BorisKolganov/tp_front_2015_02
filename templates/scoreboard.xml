@@ -9,7 +9,7 @@
         <tr><th>name</th> <th>score</th></tr>
             <fest:for iterate="json" index="i">
             <tr>
-                <td><fest:value>json[i]["Name"]</fest:value></td>
+                <td><fest:value>json[i]["name"]</fest:value></td>
                 <td><fest:value>json[i]["score"]</fest:value></td>
             </tr>
             </fest:for>

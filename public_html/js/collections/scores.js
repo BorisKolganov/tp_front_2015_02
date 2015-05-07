@@ -1,16 +1,20 @@
 define([
     'backbone',
-    'models/score'
+    'models/score',
+    'syncs/score_sync'
 ], function(
     Backbone,
-    Score
+    Score,
+    score_sync
 ){
 
     var UserCollection = Backbone.Collection.extend({
     	model: Score,
+        sync: score_sync,
         comparator: function(score) {
             return -score.get("score")
-        }
+        },
+        
     });
 
     return new UserCollection();
