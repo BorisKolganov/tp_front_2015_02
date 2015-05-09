@@ -7,6 +7,7 @@ $yellow_color: yellow;
 
 
 
+
 .control-buttons{
     width: 70%;
     margin: 0 auto;
@@ -20,6 +21,7 @@ $yellow_color: yellow;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(0,0,0,.2);
+    cursor: pointer;
 }
 
 .control-buttons__button_red {
@@ -36,4 +38,20 @@ $yellow_color: yellow;
 }
 .control-buttons__button_yellow {
 	background-color: $yellow_color;
+}
+
+.gameTable__cell_1 {
+background-color: red;
+}
+.gameTable__cell_2 {
+  background-color: green;
+}
+.gameTable__cell_3 {
+  background-color: blue;
+}
+.gameTable__cell_4 {
+  background-color: yellow;
+}
+.gameTable__cell_5 {
+  background-color: pink;
 }

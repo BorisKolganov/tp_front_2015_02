@@ -6,17 +6,23 @@
     <div class="score">
         You score: <fest:value>json.score</fest:value>
     </div>
+    <div class="ready btn btn-success"> READY </div>
+    <fest:value>json.h</fest:value><fest:space/>
+    <fest:value>json.w</fest:value>
     <div>
         <table class="gameTable" border="2">
-            <fest:for from="1" to="10" index="i">
+            <fest:for from="0" to="json.h-1" index="i">
                 <tr class="gameTable__row">
-                    <fest:for from="1" to="10" index="j">
-                        <td  class="gameTable__cell"  style="background-color: red;"><fest:value>j</fest:value><fest:space/><fest:value>i</fest:value></td>
+                    <fest:for from="0" to="json.w-1" index="j">
+                        <td  class="gameTable__cell_{json.field[i][j]}">0</td>
                     </fest:for>
                 </tr>
             </fest:for>
         </table>
     </div>
+    <br/>
+    <br/>
+    <center>
     <div class="control-buttons">
         <div class="control-buttons__button control-buttons__button_red">1</div>
         <div class="control-buttons__button control-buttons__button_green">2</div>
@@ -24,7 +30,7 @@
         <div class="control-buttons__button control-buttons__button_yellow">4</div>
         <div class="control-buttons__button control-buttons__button_pink">5</div>
     </div>
-
+    </center>
     <br/>
     <a href="#" class="btn btn-danger">back</a>
 </fest:template>

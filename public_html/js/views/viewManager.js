@@ -52,7 +52,6 @@ define([
             });
         },
         login_error: function (data) {
-            console.log(data)
             this.render(JSON.stringify(data))
             this.show();
         },

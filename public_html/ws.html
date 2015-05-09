@@ -4,24 +4,73 @@
     <link rel="stylesheet" href="bootstrap/css/main.css"/>
     <link rel="stylesheet" href="css/my.css"/>
 
-</head><body>    <center>
+</head><body>   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <center>
     <div class="application"></div>
     </center>
     <script type="text/javascript">
     var ws;
+    var user1 = {
+    	"name": "qq",
+    	"password": "qq"
+    }
+    var user2 = {
+    	"name": "ww",
+    	"password": "ww"
+    }
+
+    function game() {
+    	$.ajax({
+    			async: false,
+    			method: 'POST',
+    			url: "/game.html",
+    			dataType: 'json'
+    		}).done(function(data) {
+    			console.log(data)
+    		});
+    }
+    function check() {
+    	$.ajax({
+    			async: false,
+    			method: 'GET',
+    			url: "/api/v1/auth/check",
+    			dataType: 'json'
+    		}).done(function(data) {
+    			console.log(data)
+    		});
+    }
+    function login(data) {
+    	$.ajax({
+			type: "POST",
+			contentType: "application/json; charset=utf-8",
+			url: "api/v1/auth/signin",
+			data: JSON.stringify(data),
+			dataType: "json"
+		}).done(function(data) {
+			console.log(data);
+		})
+    }
+
     function init () {
     	ws = new WebSocket("ws://localhost:8080/gameplay");
-    	ws.onopen = function () {
-    		alert("soket opened");
+    	ws.onopen = function (data) {
+    		console.log("WebSocket opened");
+    		console.log(data);
+    		
+
     	}
     	ws.onmessage = function (data) {
     		console.log(data);
     	}
     	ws.onclose = function () {
-    		alert("close")
+    		alert("close");
     	}
     }
     </script>
 
-    <div class="btn btn-primary" onclick="init()">init</div>
+    <div class="btn btn-primary" onclick="init()">socket start</div>
+    <div class="btn btn-primary" onclick="game()">game.html</div>
+    <div class="btn btn-primary" onclick="login(user1)">user1</div>
+    <div class="btn btn-primary" onclick="login(user2)">user2</div>
 </body></html>

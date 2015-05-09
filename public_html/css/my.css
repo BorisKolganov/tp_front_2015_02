@@ -9,7 +9,8 @@
   margin: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2); }
+  border-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
 
 .control-buttons__button_red {
   background-color: red; }
@@ -25,5 +26,20 @@
 
 .control-buttons__button_yellow {
   background-color: yellow; }
+
+.gameTable__cell_1 {
+  background-color: red; }
+
+.gameTable__cell_2 {
+  background-color: green; }
+
+.gameTable__cell_3 {
+  background-color: blue; }
+
+.gameTable__cell_4 {
+  background-color: yellow; }
+
+.gameTable__cell_5 {
+  background-color: pink; }
 
 /*# sourceMappingURL=my.css.map */
