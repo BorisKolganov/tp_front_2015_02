@@ -1,22 +1,42 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
     <fest:include src='addons/header.xml'/>
-    <div>
-        <h3>Login</h3>
+    <div class="grid__row">
+    <div class="grid__module grid__module_col_4 grid__module_span_1">
+    <div class="header header-other">
+        Login
     </div>
-    <form method="post" class="form-horizontal login-form">
+    <form method="post" class="pure-form pure-form-stacked login-form">
     	<fieldset>
-    		<div class="form-group">
-   					<input type="email"  name="name" class="form-control login-form__email" placeholder="e-mail" required="true"/>
-    		</div>
-    		<div class="form-group">
- 				<input type="password" name="password" placeholder="your pass" class="form-control login-form__password" required="true"/> <br />
- 			</div>
- 			<div class="form-group">
- 				<input type="submit" value="send" class="btn btn-success"/>
- 			</div>
+            <legend></legend>
+            <label for="email">Email</label>
+   			<input type="email"  name="name" class="form-control login-form__email" placeholder="e-mail" required="true"/>
+ 			<label for="password">Password</label>
+            <input type="password" name="password" placeholder="your pass" class="form-control login-form__password" required="true"/>
  		</fieldset>
  	</form>
-	<a href="#registration" class="btn btn-info">registration</a>
-    <a href="#" class="btn btn-danger">back</a> 
+     <a class="button submit">
+        <span>
+            <span></span>
+            <span></span>
+            <span>Log in</span>
+          </span>
+    </a><br/>
+    <a href="#registration" class="button">
+        <span>
+            <span></span>
+            <span></span>
+            <span>Registration</span>
+          </span>
+    </a><br/>
+    <a href="#" class="button">
+        <span>
+            <span></span>
+            <span></span>
+            <span>Back</span>
+          </span>
+    </a><br/>
+    </div>
+    </div>
+
 </fest:template>

@@ -17,7 +17,7 @@ define([
         events: {
             "change .signup-form__password": "validatePassword",
             "keyup .signup-form__password_confirm": "validatePassword",
-            "submit": "submit",
+            "click .submit": "submit",
             "change": "localstorage"
         },
         initialize: function () {
@@ -49,7 +49,6 @@ define([
             }
         },
         submit: function () {
-            event.preventDefault();
             var result = $(".signup-form").serializeObject();
             this.model.signup(result)
             localStorage.removeItem("email");

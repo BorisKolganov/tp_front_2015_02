@@ -17,11 +17,11 @@ define([
         game: game,
         events: {
             "click .ready": 'ready',
-            "click .control-buttons__button_red": 'click_red',
-            "click .control-buttons__button_green": 'click_green',
-            "click .control-buttons__button_blue": 'click_blue',
-            "click .control-buttons__button_yellow": 'click_yellow',
-            "click .control-buttons__button_pink": 'click_pink'
+            "click .game-button_1": 'click_red',
+            "click .game-button_1": 'click_green',
+            "click .game-button_1": 'click_blue',
+            "click .game-button_1": 'click_yellow',
+            "click .game-button_1": 'click_pink'
         },
         ready: function () {
             $.ajax({
@@ -41,14 +41,6 @@ define([
         },
         click_red: function () {
             this.game.send_color(1)
-            // this.render({
-            //     'score': "one billion", 
-            //     'field': [[7,7,7,7],
-            //               [7,7,7,7],
-            //               [7,7,7,7],
-            //               [7,7,7,7]],
-            //     'h':4,
-            //     'w':4});
         },
         click_green: function () {
             this.game.send_color(2)
@@ -63,20 +55,28 @@ define([
             this.game.send_color(5)
         },
         initialize: function () {
-            this.render({
-                'score': "one billion", 
-                'field': [[1,2,3,4],
-                          [5,6,7,8],
-                          [9,1,2,3],
-                          [7,7,7,7]],
-                'h':4,
-                'w':4});
+            this.render();
             this.hide();
             this.listenTo(this.game, "socket:open", this.start_game);
             this.listenTo(this.game, "socket:close", this.end_game);
             this.listenTo(this.game, "socket:message", this.message);
         },
         render: function (data) {
+            if (data === undefined) {
+                data = {
+                'score': "one billion", 
+                'field': [[1,2,3,4,5,4,2,3,1],
+                          [5,4,2,1,2,3,4,2,5],
+                          [2,3,4,1,3,4,5,3,2],
+                          [2,3,5,5,1,1,2,3,4],
+                          [1,2,4,5,2,3,3,2,1],
+                          [4,2,1,2,3,4,5,5,3],
+                          [5,5,5,3,2,3,1,3,4],
+                          [3,4,5,5,4,3,1,2,3],
+                          [3,4,5,2,3,1,3,3,1]],
+                'h':9,
+                'w':9}
+            }
             this.$el.html( this.template(data) );
         },
         show: function () {
@@ -115,8 +115,15 @@ define([
                 })
             }
             if (this.game.data.status == "finish") {
-                alert("Game over "+ this.game.data.win?"winner":"looser")
                 this.game.ws.close();
+                var str;
+                if (this.game.data.win) {
+                    str = "game over winner";
+                } else {
+                    str = "game over looser";
+                }
+                alert(str)
+                
             }
         }
     });

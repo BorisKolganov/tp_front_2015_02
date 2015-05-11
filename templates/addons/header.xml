@@ -1,6 +1,10 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
-        <div style="color: red">
-            <h1>Filler_game</h1>
-        </div>    
+    <div class="grid__row"> 
+    	<div class="grid__module grid__module_col_4 grid__module_span_1">
+	        <div class="header header-game">
+	        	Filler game
+	        </div>    
+        </div>
+    </div>
 </fest:template>

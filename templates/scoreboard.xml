@@ -1,19 +1,34 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
     <fest:include src='addons/header.xml'/>
-    <div>
-        <h3>Score Board</h3>
+    <div class="grid__row">
+    <div class="grid__module grid__module_col_4 grid__module_span_1"> 
+
+    <div class="header header-other">
+        Score Board
     </div>
 
-    <table class="table">
-        <tr><th>name</th> <th>score</th></tr>
+    <table class="pure-table pure-table-horizontal">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
             <fest:for iterate="json" index="i">
             <tr>
                 <td><fest:value>json[i]["name"]</fest:value></td>
                 <td><fest:value>json[i]["score"]</fest:value></td>
             </tr>
             </fest:for>
-
     </table>
-    <a href="#" class="btn btn-danger">back</a>
+    <a href="#" class="button">
+        <span>
+            <span></span>
+            <span></span>
+            <span>Back</span>
+          </span>
+    </a>
+    </div>
+    </div>
 </fest:template>

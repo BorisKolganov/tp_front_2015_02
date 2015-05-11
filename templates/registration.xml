@@ -1,30 +1,38 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
                context_name="json">
     <fest:include src='addons/header.xml'/>
-    <div>
-        <h3>Registration</h3>
+    <div class="grid__row">
+    <div class="grid__module grid__module_col_4 grid__module_span_1"> 
+    <div class="header header-other">
+        Registration
     </div>
-    <form method="post" class="form-horizontal signup-form">
+    <form method="post" class="pure-form pure-form-stacked signup-form">
         <fieldset>
-
-            <div class="form-group">
-                <input type="email" class="form-control signup-form__email" name="email" placeholder="e-mail" required="true" title="input e-mail"/>
-            </div>
-
-            <div class="form-group">
-                <input type="text" name="name" placeholder="your name" class="form-control signup-form__name" required="true" pattern="[A-Za-z0-9_-]+" /> <br />
-            </div>
-
-            <div class="form-group">
-                <input type="password" name="password" placeholder="Password" required="true" class="form-control signup-form__password"/> <br />
-            </div>
-            <div class="form-group">
-                <input type="password" placeholder="Confirm Password" required="true" class="form-control signup-form__password_confirm"/> <br />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="submit" class="btn btn-success"/>
-            </div>
-        </fieldset>
+            <label for="email">Email</label>
+            <input type="email" class="form-control signup-form__email" name="email" placeholder="e-mail" required="true" title="input e-mail"/>
+            <label for="name">User name</label>
+            <input type="text" name="name" placeholder="your name" class="form-control signup-form__name" required="true" pattern="[A-Za-z0-9_-]+" />
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Password" required="true" class="form-control signup-form__password"/> 
+            <label for="password">Confirm password</label>
+            <input type="password" placeholder="Confirm Password" required="true" class="form-control signup-form__password_confirm"/>
+         </fieldset>
     </form>
-    <a href="#" class="btn btn-danger">back</a>
+    <a class="button submit">
+        <span>
+            <span></span>
+            <span></span>
+            <span>Submit</span>
+          </span>
+    </a><br/>
+    <a href="#" class="button ">
+        <span>
+            <span></span>
+            <span></span>
+            <span>back</span>
+        </span>
+    </a>
+    </div>
+    </div>
+    
 </fest:template>

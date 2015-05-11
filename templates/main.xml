@@ -2,22 +2,65 @@
     context_name="json">
     <fest:include src='addons/header.xml'/>
     
-    <div> 
-        <h3>Main menu</h3>
+
+    
+    <div class="grid__row">
+    <div class="grid__module grid__module_col_4 grid__module_span_1">
+        <div class="header header-welcome">
+            <fest:choose>
+                <fest:when test="json">
+                    Welcome back, <fest:space></fest:space><fest:value>json</fest:value>!
+                </fest:when>
+                <fest:otherwise>
+                    Welcome, friend!
+                </fest:otherwise>
+            </fest:choose>
+        </div>
+          
+            
+        <a href="#scoreboard" class="button">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Scoreboard</span>
+              </span>
+        </a>
+        <br/>
+        <a href="#game" class="button">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Game</span>
+              </span>
+        </a> <br/>
+        <fest:choose>
+        <fest:when test="json">
+            <a class="button button-logout">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Log out</span>
+              </span>
+            </a>
+        </fest:when>
+
+        <fest:otherwise>
+            <a href="#login" class="button">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Log in</span>
+              </span>
+            </a> <br/>
+            <a href="#registration" class="button">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Registration</span>
+              </span>
+            </a>
+        </fest:otherwise>
+        </fest:choose>
     </div>
-    <a href="#scoreboard" class="btn btn-info">Scoreboard</a> <br/><br/>
-    <a href="#game" class="btn btn-success">Game</a> <br/><br/>
-
-
-    <fest:choose>
-    <fest:when test="json">
-        <a class="btn btn-danger button-logout">logout</a>
-    </fest:when>
-
-    <fest:otherwise>
-        <a href="#login" class="btn btn-primary">login</a><br/><br/>
-        <a href="#registration" class="btn btn-info">registration</a>
-    </fest:otherwise>
-
-</fest:choose>
+    </div>
 </fest:template>

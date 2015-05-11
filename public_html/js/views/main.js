@@ -20,7 +20,14 @@ define([
             this.hide();
         },
         render: function () {
-            this.$el.html(this.template(this.model.has("name")));
+            var name = this.model.get("name");
+            console.log(name)
+            if (name === undefined) {
+
+                console.log("undefined")
+                name = false;
+            }
+            this.$el.html(this.template(name));
         },
         show: function () {
             this.trigger('show', this);
