@@ -18,10 +18,10 @@ define([
         events: {
             "click .ready": 'ready',
             "click .game-button_1": 'click_red',
-            "click .game-button_1": 'click_green',
-            "click .game-button_1": 'click_blue',
-            "click .game-button_1": 'click_yellow',
-            "click .game-button_1": 'click_pink'
+            "click .game-button_2": 'click_green',
+            "click .game-button_3": 'click_blue',
+            "click .game-button_4": 'click_yellow',
+            "click .game-button_5": 'click_pink'
         },
         ready: function () {
             $.ajax({
