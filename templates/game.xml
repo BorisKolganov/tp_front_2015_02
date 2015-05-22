@@ -4,7 +4,8 @@
     <div class="grid__row"> 
         <div class="grid__module grid__module_col_4 grid__module_span_1">
             <div class="header header-other">
-                You score:<fest:space></fest:space><fest:value>json.score</fest:value>
+                You score:<fest:space></fest:space><fest:value>json.myScore</fest:value>
+                Enemy score:<fest:space></fest:space><fest:value>json.enemyScore</fest:value>
             </div>
             <div class="ready button"> 
                 <span>
