@@ -27,6 +27,7 @@ define([
         },
         message: function(msg) {
             var data = JSON.parse(msg.data);
+            console.log(data)
             if (data.status == "start") {
                 self.trigger("game:start", data)
             }
