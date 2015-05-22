@@ -1,0 +1,56 @@
+<fest:template xmlns:fest="http://fest.mail.ru"
+    context_name="json">
+
+    <div class="grid__row"> 
+        <div class="grid__module grid__module_col_4 grid__module_span_1">
+            <div class="header header-other">
+                You score:<fest:space></fest:space><fest:value>json.myScore</fest:value><br/>
+                Enemy score:<fest:space></fest:space><fest:value>json.enemyScore</fest:value>
+            </div>
+            <div class="ready button"> 
+                <span>
+                <span></span>
+                <span></span>
+                <span>Ready</span>
+              </span> 
+          </div>
+        </div>
+    </div>
+    <div class="grid__row">
+    <div class="grid__module grid__module_col_3 grid__module_span_3">
+    <center>
+    <div>
+        <table class="game-board">
+            <fest:for from="0" to="json.height-1" index="i">
+                <tr class="game-board__row">
+                    <fest:for from="0" to="json.width-1" index="j">
+                        <td  class="game-board__row__cell game-board__row__cell_{json.board[i][j]}"></td>
+                    </fest:for>
+                </tr>
+            </fest:for>
+        </table>
+    </div>
+    </center>
+    </div> 
+    </div>
+
+    <div class="grid__row">
+        <div class="grid__module grid__module_col_4 grid__module_span_1">
+        <div class="game-button-container">
+            <div class="game-button game-button_1"></div>
+            <div class="game-button game-button_2"></div>
+            <div class="game-button game-button_3"></div>
+            <div class="game-button game-button_4"></div>
+            <div class="game-button game-button_5"></div>
+        </div>
+    
+        <a href="#" class="button">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Back</span>
+              </span>
+        </a><br/>
+        </div>
+    </div>
+</fest:template>

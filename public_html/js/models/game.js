@@ -5,12 +5,12 @@ define([
 ){
     var self;
     var Game = Backbone.Model.extend({
-    	initialize: function () {
+        initialize: function () {
             this.data = {};
             console.log("gamemodel")
             console.log(this)
             self = this;
-    	},
+        },
         connect: function () {
             if (this.socket === undefined) {
                 this.socket = new WebSocket("ws://localhost:8080/gameplay");
@@ -28,12 +28,14 @@ define([
         message: function(msg) {
             var data = JSON.parse(msg.data);
             if (data.status == "start") {
-                self.trigger("game:start")
+                self.trigger("game:start", data)
             }
             if (data.status == "finish") {
                 self.trigger("game:stop")
             }
-            self.trigger("socket:message", data);
+            if (data.status !== undefined) {
+                self.trigger("socket:message", data);
+            }
         },
         send: function(color) {
             this.socket.send(JSON.stringify({"color": color}))
