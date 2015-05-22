@@ -40,11 +40,11 @@
     <div class="grid__row">
         <div class="grid__module grid__module_col_4 grid__module_span_1">
         <div class="game-button-container">
-            <div class="game-button game-button_1"></div>
-            <div class="game-button game-button_2"></div>
-            <div class="game-button game-button_3"></div>
-            <div class="game-button game-button_4"></div>
-            <div class="game-button game-button_5"></div>
+            <div class="game-button game-button_1 white_{json.white[0]}"></div>
+            <div class="game-button game-button_2 white_{json.white[1]}"></div>
+            <div class="game-button game-button_3 white_{json.white[2]}"></div>
+            <div class="game-button game-button_4 white_{json.white[3]}"></div>
+            <div class="game-button game-button_5 white_{json.white[4]}"></div>
         </div>
     
         <a href="#" class="button">

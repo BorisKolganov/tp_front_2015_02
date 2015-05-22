@@ -20,19 +20,17 @@ define([
             console.log(this.ws)
             
         },
-        open: function(data) {
+        open: function() {
             console.log("gamemodel")
             console.log(self)
             console.log("gamemodel stop")
             console.log("open");
-            console.log(data);
-            self.data = JSON.parse(data);
+            console.log();
             self.trigger('socket:open');
         },
-        close: function(data) {
+        close: function() {
             console.log("close");
             console.log("data");
-            self.data = JSON.parse(data.data);
             self.trigger("socket:close")
         },
         message: function(data) {
