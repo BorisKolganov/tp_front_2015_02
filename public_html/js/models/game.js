@@ -11,38 +11,32 @@ define([
             console.log(this)
             self = this;
     	},
-        start: function () {
-            this.ws = new WebSocket("ws://localhost:8080/gameplay");
-            this.ws.onopen = this.open;
-            this.ws.onmessage = this.message;
-            this.ws.onclose = this.console;
-            console.log("WebSocket opened");
-            console.log(this.ws)
-            
+        connect: function () {
+            if (this.socket === undefined) {
+                this.socket = new WebSocket("ws://localhost:8080/gameplay");
+            }
+            this.socket.onopen = this.open;
+            this.socket.onmessage = this.message;
+            this.socket.onclose = this.console;         
         },
-        open: function(data) {
-            console.log("gamemodel")
-            console.log(self)
-            console.log("gamemodel stop")
-            console.log("open");
-            console.log(data);
-            self.data = JSON.parse(data);
-            self.trigger('socket:open');
+        open: function() {
+            self.trigger("socket:open");
         },
-        close: function(data) {
-            console.log("close");
-            console.log("data");
-            self.data = JSON.parse(data.data);
+        close: function() {
             self.trigger("socket:close")
         },
-        message: function(data) {
-            //console.log("message");
-            //console.log(data);
-            self.data = JSON.parse(data.data);
-            self.trigger("socket:message");
+        message: function(msg) {
+            var data = JSON.parse(msg.data);
+            if (data.status == "start") {
+                self.trigger("game:start")
+            }
+            if (data.status == "finish") {
+                self.trigger("game:stop")
+            }
+            self.trigger("socket:message", data);
         },
-        send_color: function(color) {
-            this.ws.send(JSON.stringify({"color": color}))
+        send: function(color) {
+            this.socket.send(JSON.stringify({"color": color}))
         }
      });
 

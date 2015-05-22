@@ -6,6 +6,7 @@ $cell-size: 30px;
 		&__cell {
 			width: $cell-size;
 			height: $cell-size;
+			opacity: 0.73;
 			&_1 {
 				background-color: red;
 			};
@@ -37,9 +38,11 @@ $cell-size: 30px;
     margin-right: 10px; 
 	width: $cell-size - 2;
 	height: $cell-size - 2;
+	opacity: 0.5;
 	&:hover {
   		-webkit-box-shadow: 0px 1px 3px #666666;
  		-moz-box-shadow: 0px 1px 3px #666666;
+ 		opacity: 0.73;
 	};
 	&_1 {
 		background-color: red;

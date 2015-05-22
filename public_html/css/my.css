@@ -67,9 +67,25 @@
   .button:hover {
     border-color: #00ff00; }
   .button span:nth-child(1) {
-    color: green; }
+    color: white; }
   .button span:nth-child(2) {
     color: grey; }
+  .button_red {
+    border-color: red; }
+    .button_red:hover {
+      border-color: #ff6666; }
+    .button_red span:nth-child(1) {
+      color: white; }
+    .button_red span:nth-child(2) {
+      color: grey; }
+  .button_purpl {
+    border-color: #ac26b5; }
+    .button_purpl:hover {
+      border-color: #d664de; }
+    .button_purpl span:nth-child(1) {
+      color: white; }
+    .button_purpl span:nth-child(2) {
+      color: grey; }
   .button span {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -511,7 +527,8 @@
   border: 0px; }
   .game-board__row__cell {
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    opacity: 0.73; }
     .game-board__row__cell_1 {
       background-color: red; }
     .game-board__row__cell_2 {
@@ -534,10 +551,12 @@
   cursor: pointer;
   margin-right: 10px;
   width: 28px;
-  height: 28px; }
+  height: 28px;
+  opacity: 0.5; }
   .game-button:hover {
     -webkit-box-shadow: 0px 1px 3px #666666;
-    -moz-box-shadow: 0px 1px 3px #666666; }
+    -moz-box-shadow: 0px 1px 3px #666666;
+    opacity: 0.73; }
   .game-button_1 {
     background-color: red; }
   .game-button_2 {
@@ -1015,5 +1034,8 @@ striping:
 
 .pure-table-horizontal tbody > tr:last-child > td {
   border-bottom-width: 0; }
+
+body {
+  background-color: #5c1461; }
 
 /*# sourceMappingURL=my.css.map */

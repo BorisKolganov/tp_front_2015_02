@@ -1,13 +1,23 @@
 $border_color: #00f000;
+$border_color_red: red;
+$border_color_purpl: #ac26b5;
+
+
 $border_hover_color: #00ff00; 
-$first-text_color: green;
+$border_hover_color_red: #ff6666;
+$border_hover_color_purl: #d664de;
+
+
+$first-text_color: white;
 $second-text_color: grey;
+
 
 
 .button {
   width: 210px;   
   background-color: transparent;    
   cursor: pointer;  
+
   border-color: $border_color; 
   &:hover {
     border-color: $border_hover_color; 
@@ -18,6 +28,35 @@ $second-text_color: grey;
   span:nth-child(2) {
     color: $second-text_color; 
   };
+
+  &_red {
+    border-color: $border_color_red; 
+    &:hover {
+      border-color: $border_hover_color_red; 
+    };
+    span:nth-child(1) {
+      color: $first-text_color; 
+    };
+    span:nth-child(2) {
+      color: $second-text_color; 
+    };
+  };
+
+  &_purpl {
+    border-color: $border_color_purpl;
+    &:hover {
+      border-color: $border_hover_color_purl; 
+    };
+    span:nth-child(1) {
+      color: $first-text_color; 
+    };
+    span:nth-child(2) {
+      color: $second-text_color; 
+    }; 
+  };
+  
+  
+  
   span {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
