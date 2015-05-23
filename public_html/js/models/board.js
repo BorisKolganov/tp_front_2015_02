@@ -41,11 +41,9 @@ define([
             });
         },
         step: function (data) {
-            console.log(data)
             this.set({
                 "board": data.field
             });
-            console.log(this.toJSON())
             this.trigger("board:updated");
         },
         setBoard: function (data) {

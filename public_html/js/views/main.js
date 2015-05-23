@@ -21,10 +21,7 @@ define([
         },
         render: function () {
             var name = this.model.get("name");
-            console.log(name)
             if (name === undefined) {
-
-                console.log("undefined")
                 name = false;
             }
             this.$el.html(this.template(name));
@@ -37,7 +34,6 @@ define([
             this.$el.hide();
         },
         logout: function () {
-            console.log('logout')
             this.model.logout();
         }
 

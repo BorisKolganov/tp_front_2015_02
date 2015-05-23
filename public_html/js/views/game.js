@@ -4,6 +4,7 @@ define([
     'views/board',
     'models/board',
     'models/game',
+    'collections/btns',
     'jquery'
 ], function(
     Backbone,
@@ -11,6 +12,7 @@ define([
     boardView,
     boardModel,
     gameModel,
+    btns,
     $
 ){
 
@@ -29,6 +31,7 @@ define([
             "click .game-button_5": 'click_pink'
         },
         initialize: function () {
+            console.log(btns);
             this.listenTo(boardModel, "board:updated", this.render)
             this.render();
             this.hide();

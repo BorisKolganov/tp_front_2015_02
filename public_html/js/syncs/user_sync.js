@@ -6,7 +6,6 @@ define([
 		if (model.has('logining')) {
 			method = "update"
 		}
-		console.log(method)
 		var method_map = {
 			'create': {
 				send: function() {
