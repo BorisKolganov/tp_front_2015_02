@@ -32,7 +32,8 @@ define([
 					$.ajax({
 						type: "GET",
 						url: "api/v1/auth/check",
-						dataType: "json"
+						dataType: "json",
+						async: false
 					}).done(function (data){
 						if (data.status == 200) {
 							model.clear();

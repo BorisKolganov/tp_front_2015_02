@@ -20,9 +20,11 @@ define([
             this.hide();
         },
         render: function () {
+            
             var name = this.model.get("name");
             if (name === undefined) {
                 name = false;
+                console.log(name)
             }
             this.$el.html(this.template(name));
         },

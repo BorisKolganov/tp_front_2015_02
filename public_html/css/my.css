@@ -567,6 +567,10 @@
     background-color: yellow; }
   .game-button_5 {
     background-color: pink; }
+  .game-button_disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    background: #CCC; }
 
 /*!
 Pure v0.6.0

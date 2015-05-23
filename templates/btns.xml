@@ -1,0 +1,9 @@
+<fest:template xmlns:fest="http://fest.mail.ru"
+    context_name="json">
+    <div class="grid__row"> 
+    	<div class="grid__module_col_3 grid__module_span_1">
+    		<div class="test"></div>
+    	</div>
+    </div>
+    
+</fest:template>
