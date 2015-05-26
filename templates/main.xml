@@ -1,11 +1,8 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
-    <fest:include src='addons/header.xml'/>
-    
-
-    
     <div class="grid__row">
     <div class="grid__module grid__module_col_4 grid__module_span_1">
+        
         <div class="header header-welcome">
             <fest:choose>
                 <fest:when test="json">
@@ -25,8 +22,10 @@
                 <span>Scoreboard</span>
               </span>
         </a>
+
         <br/>
-        <a href="#game" class="button">
+
+        <a href="#game" class="button button_green">
             <span>
                 <span></span>
                 <span></span>
@@ -35,24 +34,31 @@
         </a> <br/>
         <fest:choose>
         <fest:when test="json">
-            <a class="button button-logout">
+            <a class="button button_green button-logout">
             <span>
                 <span></span>
                 <span></span>
                 <span>Log out</span>
               </span>
-            </a>
+            </a><br/>
+            <a href="#profile" class="button button_blue">
+            <span>
+                <span></span>
+                <span></span>
+                <span>Profile</span>
+            </span>
+            </a><br/>
         </fest:when>
 
         <fest:otherwise>
-            <a href="#login" class="button">
+            <a href="#login" class="button button_blue">
             <span>
                 <span></span>
                 <span></span>
                 <span>Log in</span>
               </span>
             </a> <br/>
-            <a href="#registration" class="button">
+            <a href="#registration" class="button button_blue">
             <span>
                 <span></span>
                 <span></span>

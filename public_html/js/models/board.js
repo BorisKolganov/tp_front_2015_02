@@ -8,10 +8,6 @@ define([
 
     var Board = Backbone.Model.extend({
         initialize: function () {
-            this.listenTo(gameModel, "socket:message", this.step)
-            this.listenTo(gameModel, "game:start", this.setBoard)
-            this.listenTo(gameModel, "game:stop", this.stop)
-
             this.set({
                 'board': [[]],
                 'width': 0,
@@ -42,7 +38,11 @@ define([
         },
         step: function (data) {
             this.set({
-                "board": data.field
+                "board": data.field,
+                "user1": data.user1,
+                "user2": data.user2,
+                "score1": data.score1,
+                "score2": data.score2
             });
             this.trigger("board:updated");
         },

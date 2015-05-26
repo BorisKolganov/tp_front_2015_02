@@ -1,11 +1,13 @@
 define([
     'backbone',
     'models/btn',
-    'models/game'
+    'models/game',
+    'underscore'
 ], function(
     Backbone,
     Btn,
-    game
+    game,
+    _
 ){
 
     var BtnCollection = Backbone.Collection.extend({
@@ -15,24 +17,40 @@ define([
             this.add([
                 {
                     "color": "red",
-                    "id": 1
+                    "id": 1,
+                    "disabled": false
                 },
                 {
                     "color": "green",
-                    "id": 2
+                    "id": 2,
+                    "disabled": false
                 },
                 {
                     "color": "blue",
-                    "id": 3
+                    "id": 3,
+                    "disabled": false
                 },
                 {
                     "color": "yellow",
-                    "id": 4
+                    "id": 4,
+                    "disabled": false
                 },
                 {
                     "color": "pink",
-                    "id": 5
+                    "id": 5,
+                    "disabled": false
                 }])
+        },
+        check: function (data) {
+            _.forEach(this.models, function (val) {
+                if (val.get("id") == data.color1 ||
+                    val.get("id") == data.color2) {
+                    val.set({"disabled": true});
+                } else {
+                    val.set({"disabled": false});
+                }
+            }, this)
+            this.trigger("buttons:checked");
         }
 
     });

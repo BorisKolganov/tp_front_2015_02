@@ -1,6 +1,5 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
-    <fest:include src='addons/header.xml'/>
     <div class="grid__row">
     <div class="grid__module grid__module_col_4 grid__module_span_1">
     <div class="header header-other">
@@ -15,21 +14,21 @@
             <input type="password" name="password" placeholder="your pass" class="form-control login-form__password" required="true"/>
  		</fieldset>
  	</form>
-     <a class="button submit">
+     <a class="button button_blue submit">
         <span>
             <span></span>
             <span></span>
             <span>Log in</span>
           </span>
     </a><br/>
-    <a href="#registration" class="button">
+    <a href="#registration" class="button button_blue">
         <span>
             <span></span>
             <span></span>
             <span>Registration</span>
           </span>
     </a><br/>
-    <a href="#" class="button">
+    <a href="#" class="button button_red">
         <span>
             <span></span>
             <span></span>

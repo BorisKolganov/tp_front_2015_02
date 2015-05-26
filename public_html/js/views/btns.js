@@ -16,28 +16,24 @@ define([
     var View = Backbone.View.extend({
         template: tmpl,
         className: "game-button-container",
-        events: {"click": this.render},
+        buttons: btnCollection,
         initialize: function () {
-            alert("init")
-            this.render();
-            this.buttonsView = [];
-            _.forEach(btnCollection.models, function(val) {
-                var view = new btnView({"model": val})
-                this.buttonsView.push(view)
-                this.listenTo(view, "button:updated", this.update)
+            this.views = [];
+            _.forEach(this.buttons.models, function(val) {
+                var view = new btnView({"model": val});
+                this.listenTo(view, "button:clicked", this.recive)
+                this.views.push(view)
             }, this)
-
+            this.render();
         },
-        update: function (){
-            this.trigger("buttons:updated");
+        recive: function (data) {
+            this.trigger("color:selected", data);
         },
         render: function () {
-            console.log(this.buttonsView)
             this.$el.html(this.template());
-            _.forEach(this.buttonsView, function(val) {
-                    this.$el.append(val.render().$el);
+            _.forEach(this.views, function(val) {
+                this.$el.append(val.$el);
             }, this)
-            return this;
         }
     });
     return new View ();

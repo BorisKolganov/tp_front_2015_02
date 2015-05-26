@@ -1,22 +1,16 @@
 define([
     'backbone',
     'tmpl/game',
-    'views/board',
-    'models/board',
     'models/game',
-    'collections/btns',
+    'views/board',
     'views/btns',
-    'models/btn',
     'jquery'
 ], function(
     Backbone,
     tmpl,
-    boardView,
-    boardModel,
     gameModel,
-    colBtns,
-    btns,
-    btn,
+    boardView,
+    buttonsView,
     $
 ){
 
@@ -26,16 +20,16 @@ define([
         className: "game-view",
         board: boardView,
         game: gameModel,
-        btns: btns,
+        buttons: buttonsView,
         events: {
-            "click .ready": 'ready',
-            "click": this.render
+            "click .ready": 'ready'
         },
         initialize: function () {
-            console.log(btns);
-            this.listenTo(btns, "buttons:updated", this.render)
-            this.listenTo(boardModel, "board:updated", this.render)
+            this.listenTo(this.game, "game:updated", this.step)
+            this.listenTo(this.buttons, "color:selected", this.game.step)
             this.render();
+            this.buttonsDOM.append(this.buttons.$el)
+            this.boardDOM.html(this.board.render().$el)
             this.hide();
         },
         ready: function () {
@@ -51,8 +45,12 @@ define([
             });
         },
         render: function () {
-            console.log("rerender")
             this.$el.html( this.template() );
+            this.boardDOM = this.$(".board");
+            this.buttonsDOM = this.$(".buttons");
+        },
+        step: function () {
+            this.boardDOM.html(this.board.render().$el);
         },
         show: function () {
             this.trigger("show", this);

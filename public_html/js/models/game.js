@@ -1,13 +1,23 @@
 define([
-    'backbone'
+    'backbone',
+    'collections/btns',
+    'models/board'
 ], function(
-    Backbone
+    Backbone,
+    buttonsCollection,
+    boardModel
 ){
     var self;
     var Game = Backbone.Model.extend({
+        board: boardModel,
+        buttons: buttonsCollection,
         initialize: function () {
-            this.data = {};
             self = this;
+            this.listenTo(this.board, "board:updated", this.gameUpdated);
+            this.listenTo(this.buttons, "buttons:checked", this.gameUpdated);
+        },
+        gameUpdated: function () {
+            this.trigger("game:updated");
         },
         connect: function () {
             if (this.socket === undefined) {
@@ -27,17 +37,21 @@ define([
             var data = JSON.parse(msg.data);
             console.log(data);
             if (data.status == "start") {
-                self.trigger("game:start", data)
-            }
-            if (data.status == "finish") {
-                self.trigger("game:stop")
-            }
-            if (data.status !== undefined) {
-                self.trigger("socket:message", data);
+                self.trigger("game:start")
+                self.board.setBoard(data);
+                self.buttons.check(data);
+            } else if (data.status == "finish") {
+                self.board.stop();
+                self.trigger("game:stop");
+
+            } else if (data.status !== undefined) {
+                self.board.step(data);
+                self.buttons.check(data);
+                self.trigger("game:move");
             }
         },
-        send: function(color) {
-            this.socket.send(JSON.stringify({"color": color}))
+        step: function(color) {
+            self.socket.send(JSON.stringify({"color": color}))
         }
      });
 

@@ -6,8 +6,6 @@ define([
 
     var Btn = Backbone.Model.extend({
     	initialize: function () {
-    		this.color = "";
-    		this.id = "";
     	}
     });
 

@@ -1,12 +1,9 @@
-$border_color: #00f000;
-$border_color_red: red;
-$border_color_purpl: #ac26b5;
+$border_color: #ac26b5;
 
-
-$border_hover_color: #00ff00; 
-$border_hover_color_red: #ff6666;
-$border_hover_color_purl: #d664de;
-
+$border_hover_color: #d664de; 
+$border_hover_color_red: #E9001E;
+$border_hover_color_green: #73E81F;
+$border_hover_color_blue: #2B428E;
 
 $first-text_color: white;
 $second-text_color: grey;
@@ -29,31 +26,18 @@ $second-text_color: grey;
     color: $second-text_color; 
   };
 
-  &_red {
-    border-color: $border_color_red; 
-    &:hover {
+  &_red:hover {
       border-color: $border_hover_color_red; 
-    };
-    span:nth-child(1) {
-      color: $first-text_color; 
-    };
-    span:nth-child(2) {
-      color: $second-text_color; 
-    };
   };
+    
+  &_green:hover{
+      border-color: $border_hover_color_green;
+  };
+  &_blue:hover {
+    border-color: $border_hover_color_blue;
+  } 
 
-  &_purpl {
-    border-color: $border_color_purpl;
-    &:hover {
-      border-color: $border_hover_color_purl; 
-    };
-    span:nth-child(1) {
-      color: $first-text_color; 
-    };
-    span:nth-child(2) {
-      color: $second-text_color; 
-    }; 
-  };
+
   
   
   
