@@ -27,10 +27,17 @@ define([
         initialize: function () {
             this.listenTo(this.game, "game:updated", this.step)
             this.listenTo(this.buttons, "color:selected", this.game.step)
-            this.render();
+            this.listenTo(this.game, "game:stop", this.stop)
+            // this.render();
+            this.$el.html( this.template() );
+            this.boardDOM = this.$(".board");
+            this.buttonsDOM = this.$(".buttons");
             this.buttonsDOM.append(this.buttons.$el)
             this.boardDOM.html(this.board.render().$el)
             this.hide();
+        },
+        stop: function () {
+            $(".ready").show();  
         },
         ready: function () {
             $.ajax({
@@ -45,11 +52,10 @@ define([
             });
         },
         render: function () {
-            this.$el.html( this.template() );
-            this.boardDOM = this.$(".board");
-            this.buttonsDOM = this.$(".buttons");
+            
         },
         step: function () {
+            $(".ready").hide();
             this.boardDOM.html(this.board.render().$el);
         },
         show: function () {

@@ -8,9 +8,7 @@
     <hibernate.connection.url>jdbc:postgresql://localhost:5432/filler</hibernate.connection.url>
 
     <hibernate.connection.username>postgres</hibernate.connection.username>
-
-    <hibernate.connection.password>test</hibernate.connection.password>
-
+   
     <hibernate.show_sql>true</hibernate.show_sql>
 
     <hibernate.hbm2ddl.auto>validate</hibernate.hbm2ddl.auto>

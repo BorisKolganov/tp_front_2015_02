@@ -6,13 +6,6 @@
             <div class="header header-other">
                 <fest:value>json.user1</fest:value>:<fest:space></fest:space><fest:value>json.score1</fest:value><br/>
             </div>
-            <div class="ready button"> 
-                <span>
-                <span></span>
-                <span></span>
-                <span>Ready</span>
-              </span> 
-          </div>
         </div>
     </div>
     <div class="grid__row">
@@ -37,13 +30,7 @@
             <div class="header header-other">
                 <fest:value>json.user2</fest:value>:<fest:space></fest:space><fest:value>json.score2</fest:value>
             </div>
-            <a href="#" class="button button_red"> 
-                <span>
-                <span></span>
-                <span></span>
-                <span>Back to main menu</span>
-              </span> 
-          </a>
+           
         </div>
     </div>
 </fest:template>

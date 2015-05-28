@@ -5,6 +5,22 @@
     <link rel="stylesheet" href="css/my.css"/>
  
 </head><body>
+    <div class="loading">
+    <div class="loading-center">
+    <div class="loading-center-absolute">
+    <div class="object object_one"></div>
+    <div class="object object_two"></div>
+    <div class="object object_three"></div>
+    <div class="object object_four"></div>
+    <div class="object object_five"></div>
+    <div class="object object_six"></div>
+    <div class="object object_seven"></div>
+    <div class="object object_eight"></div>
+    <div class="object object_nine"></div>
+    </div>
+    </div>
+    
+    </div>
 
     <div class="grid_cols_7">
     <div class="grid__row"> 
@@ -14,8 +30,18 @@
             </div>    
         </div>
     </div>
-		<div class="application"></div>
-    </div>
+	
+    <div class="application"></div>
+    </div>  
+
+    </script>
+        <script type="text/javascript">
+        window.onload=function () {
+            document.getElementsByClassName('loading')[0].style.visibility = "hidden";
+        }
+    </script>
+    
     <script src="//localhost:35729/livereload.js"></script>
-    <script data-main="js/main" src="js/lib/require.js"></script>
+    <script src="js/build.min.js"></script>
+   
 </body></html>

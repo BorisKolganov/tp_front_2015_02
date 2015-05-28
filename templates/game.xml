@@ -1,6 +1,24 @@
 <fest:template xmlns:fest="http://fest.mail.ru"
     context_name="json">
-    
+    <div class="grid_row">
+		<div class="grid__module grid__module_col_4 grid__module_span_1">
+			<div class="ready button"> 
+				<span>
+					<span></span>
+					<span></span>
+					<span>Ready</span>
+				</span> 
+			</div>
+			 <a href="#" class="button button_red"> 
+                <span>
+                <span></span>
+                <span></span>
+                <span>Back</span>
+              </span> 
+          </a>
+		</div>
+    </div>
+
     <div class="board"></div>
     <div class="grid_row">
     	<div class="grid__module grid__module_col_4 grid__module_span_1">
