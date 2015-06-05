@@ -1,0 +1,12 @@
+<fest:template xmlns:fest="http://fest.mail.ru"
+    context_name="json">
+    <div class="grid__row"> 
+        <div class="grid__module grid__module_col_3 grid__module_span_3">
+         	<div class="alert alert-success">
+  			<a class="success_message_close close" data-dismiss="alert">×</a>
+  				<strong>Game over!</strong><fest:space></fest:space> You <fest:space></fest:space> <fest:value>json</fest:value>
+			</div>
+         	
+         </div>
+    </div>
+</fest:template>
