@@ -3,31 +3,37 @@
 
     <div class="grid__row">
     <div class="grid__module grid__module_col_4 grid__module_span_1">
-    <div class="header header-welcome">
+    
             <fest:choose>
-                <fest:when test="json">
-                    Your profile, <fest:space></fest:space><fest:value>json.name</fest:value>!
+                <fest:when test="json.name">
+                    <div class="header header-welcome">
+                        Your profile, <fest:space></fest:space><fest:value>json.name</fest:value>!
+                    </div>
+                    <table class="pure-table pure-table-horizontal">           
+                    
+                        <tr>
+                            <td>Name:</td>
+                            <td><fest:value>json.name</fest:value></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><fest:value>json.email</fest:value></td>
+                        </tr>
+                        <tr>
+                            <td>id:</td>
+                            <td><fest:value>json.id</fest:value></td>
+                        </tr>
+                    </table>
                 </fest:when>
                 <fest:otherwise>
-                    Friend, please, login!
+                    <div class="header header-welcome">
+                        Friend, please, login!
+                    </div>
                 </fest:otherwise>
             </fest:choose>
-    </div>
+
+     
     
-
-    <div>
-
-
-
-        <h3>profile</h3>
-    </div>
-
-    <div class="your-name">
-        Name: <fest:value>json.name</fest:value> <br/>
-        Email: <fest:value>json.email</fest:value> <br/>
-        Id <fest:value>json.id</fest:value>
-    </div>
-
 
     <br/>
     <a href="#" class="button button_red"> 
