@@ -42,16 +42,20 @@ define([
             }
             $(".ready").show(); 
             this.board.hide(); 
+            this.buttons.hide();
         },
         ready: function () {
+            alert("ready")
             $.ajax({
                 method: 'POST',
                 url: "/game.html",
                 dataType: 'json',
                 context: this
-            }).done(function() {
+            }).done(function(data) {
+                console.log(data)
                 this.game.connect();
             }).fail(function(data) {
+                console.log(data);
                 this.game.connect();
             });
         },

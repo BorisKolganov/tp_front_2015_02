@@ -28,7 +28,7 @@ define([
         },
         render: function(args) {
             if (typeof(args)==='undefined') args = {};
-            this.$el.html( this.template(JSON.stringify(JSON.parse(args)["body"])) );
+            this.$el.html( this.template(JSON.stringify(JSON.parse(args)["body"]["error"])) );
         },
         show: function () {
             this.$el.show();
