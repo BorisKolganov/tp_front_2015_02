@@ -3,18 +3,18 @@
     <div class="grid_row">
 		<div class="grid__module grid__module_col_4 grid__module_span_1">
 			<div class="ready button"> 
-				<span>
-					<span></span>
-					<span></span>
-					<span>Ready</span>
-				</span> 
+				<div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Ready</div>
+            </div>
 			</div>
 			 <a href="#" class="button button_red"> 
-                <span>
-                <span></span>
-                <span></span>
-                <span>Back</span>
-              </span> 
+               <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Back</div>
+            </div>
           </a>
 		</div>
     </div>

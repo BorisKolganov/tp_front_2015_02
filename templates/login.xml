@@ -9,31 +9,31 @@
     	<fieldset>
             <legend></legend>
             <label for="email">Email</label>
-   			<input type="email"  name="name" class="form-control login-form__email" placeholder="e-mail" required="true"/>
+   			<input type="email"  name="name" class="form-control login-form__email pure-form__input_email" placeholder="e-mail" required="required"/>
  			<label for="password">Password</label>
-            <input type="password" name="password" placeholder="your pass" class="form-control login-form__password" required="true"/>
+            <input type="password" name="password" placeholder="your pass" class="form-control login-form__password pure-form__input_pass" required="required"/>
+            <button type="submit" class="button button_blue">
+                <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Log in</div>
+            </div>
+            </button>
  		</fieldset>
  	</form>
-     <a class="button button_blue submit">
-        <span>
-            <span></span>
-            <span></span>
-            <span>Log in</span>
-          </span>
-    </a><br/>
     <a href="#registration" class="button button_blue">
-        <span>
-            <span></span>
-            <span></span>
-            <span>Registration</span>
-          </span>
+        <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Registration</div>
+            </div>
     </a><br/>
     <a href="#" class="button button_red">
-        <span>
-            <span></span>
-            <span></span>
-            <span>Back</span>
-          </span>
+        <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Back</div>
+            </div>
     </a><br/>
     </div>
     </div>

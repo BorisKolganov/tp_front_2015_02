@@ -21,11 +21,11 @@
             </fest:for>
     </table>
     <a href="#" class="button">
-        <span>
-            <span></span>
-            <span></span>
-            <span>Back</span>
-          </span>
+        <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Back</div>
+            </div>
     </a>
     </div>
     </div>

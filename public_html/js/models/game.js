@@ -42,7 +42,7 @@ define([
                 self.buttons.check(data);
             } else if (data.status == "finish") {
                 self.board.stop();
-                self.trigger("game:stop");
+                self.trigger("game:stop", data);
 
             } else if (data.status !== undefined) {
                 self.board.step(data);

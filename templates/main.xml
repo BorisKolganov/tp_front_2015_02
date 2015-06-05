@@ -16,54 +16,54 @@
           
             
         <a href="#scoreboard" class="button">
-            <span>
-                <span></span>
-                <span></span>
-                <span>Scoreboard</span>
-              </span>
+            <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Score board</div>
+            </div>
         </a>
 
         <br/>
 
         <a href="#game" class="button button_green">
-            <span>
-                <span></span>
-                <span></span>
-                <span>Game</span>
-              </span>
+            <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Game</div>
+            </div>
         </a> <br/>
         <fest:choose>
         <fest:when test="json">
             <a class="button button_green button-logout">
-            <span>
-                <span></span>
-                <span></span>
-                <span>Log out</span>
-              </span>
+            <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Log out</div>
+            </div>
             </a><br/>
             <a href="#profile" class="button button_blue">
-            <span>
-                <span></span>
-                <span></span>
-                <span>Profile</span>
-            </span>
+            <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Profile</div>
+            </div>
             </a><br/>
         </fest:when>
 
         <fest:otherwise>
             <a href="#login" class="button button_blue">
-            <span>
-                <span></span>
-                <span></span>
-                <span>Log in</span>
-              </span>
+            <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Log in</div>
+            </div>
             </a> <br/>
             <a href="#registration" class="button button_blue">
-            <span>
-                <span></span>
-                <span></span>
-                <span>Registration</span>
-              </span>
+            <div class="button__text">
+                <div class="button__text__1 button__text_d"></div>
+                <div class="button__text__2 button__text_d"></div>
+                <div class="button__text__3 button__text_d">Registration</div>
+            </div>
             </a>
         </fest:otherwise>
         </fest:choose>
