@@ -18,8 +18,9 @@ define([
 		                dataType: 'json'
 					}).done(function (data){
 						if (data.status == 200) {
-							model.login(data);
-							window.setTimeout( function(){}, 200 )
+							//window.setTimeout( function(){}, 200 )
+							//model.login(data);
+							model.clear();
 							model.trigger("user:load");
 						} else {
 							model.clear();
