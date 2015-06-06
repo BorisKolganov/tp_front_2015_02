@@ -12747,6 +12747,7 @@ define('syncs/user_sync',[
 					}).done(function (data){
 						if (data.status == 200) {
 							model.login(data);
+							window.setTimeout( function(){}, 200 )
 							model.trigger("user:load");
 						} else {
 							model.clear();
